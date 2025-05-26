@@ -1,0 +1,444 @@
+// .col-1-messages {
+//   padding: 0px 15px 0px 32px;
+
+//   .ant-row {
+//     display: flex;
+//     .ant-form {
+//       display: flex;
+//       padding: 5px 32px;
+//       gap: 15px;
+//       .ant-form-item {
+//         width: 90%;
+//       }
+
+//       .send-icon {
+//         // content: url(../../assets/send.png);
+//         width: 28px;
+//         height: 28px;
+//       }
+
+//       .ant-select-selector {
+//         height: 42px;
+//         border-radius: 12px;
+//         background-color: #eaeaea;
+
+//         .ant-select-selection-placeholder {
+//           color: black;
+//           font-size: 16px;
+//         }
+//       }
+//       button {
+//         background-color: #25c78b;
+//         display: flex;
+//         align-items: center;
+//         height: 42px;
+//         border-radius: 17px;
+//       }
+//     }
+//   }
+// }
+
+// .wrapper-messages {
+//   height: 90vh;
+//   overflow-y: auto;
+
+//   // Hide scrollbar for Firefox
+//   scrollbar-width: thin;
+//   scrollbar-color: transparent transparent;
+
+//   // Hide scrollbar for Chrome, Safari, and Opera
+//   &::-webkit-scrollbar {
+//     width: 0.4em;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background-color: transparent;
+//   }
+//   .user-card {
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 18px;
+//     background-color: white;
+//     padding: 24px;
+//     border-radius: 14px;
+
+//     .wrapper-user-details {
+//       display: flex;
+//       align-items: center;
+//       gap: 14px;
+
+//       .wrapper-content {
+//         color: #4f4f4f;
+//       }
+//       .notification-icon {
+//         // content: url(../../assets/notification.png);
+//         padding-right: 10px;
+//       }
+//       .ant-avatar {
+//         width: 45px !important;
+//         height: 45px !important;
+//       }
+
+//       h4 {
+//         margin: 0;
+//         font-size: 18px;
+//         font-weight: 500;
+//       }
+
+//       p {
+//         margin: 0;
+//       }
+//     }
+
+//     button {
+//       background-color: #25c78b;
+//       border-color: #25c78b;
+//       color: white;
+//       font-weight: 400;
+//       font-size: 15px;
+//       padding: 4px 20px;
+//       border-radius: 17px;
+//     }
+//   }
+// }
+
+// .left-sidebar {
+//   height: calc(100vh - 85px);
+  
+//   .left-sidebar-inner{
+//     overflow-y: auto;
+//     scrollbar-width: thin;
+//     scrollbar-color: transparent transparent;
+//     display: flex;
+//     flex-direction: column;
+//     border-radius: 14px;
+//     height: 100%;
+//   }
+
+//   .user-cards-wrapper {
+//     flex-grow: 1;
+//     height: 100%;
+//     overflow-y: auto;
+//     background: white;
+//   }
+
+//   .icon-dots {
+//     // content: url(../../assets/verticle-three-dots.png);
+//   }
+
+//   .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: white;
+//     padding: 3px 10px;
+//     border-bottom: 1px solid #afb8cf;
+
+//     h3 {
+//       font-size: 19px;
+//     }
+//     button {
+//       display: flex;
+//       align-items: center;
+//       border: none;
+//       background: transparent;
+//       box-shadow: none;
+//     }
+//   }
+
+//   .search-wrap {
+//     border-bottom: 1px solid #afb8cf;
+//     background-color: white;
+//     padding: 16px 19px;
+
+//     .ant-input-group-addon {
+//       border: none;
+//       background-color: #e3e7f9;
+//       padding: 10px 11px;
+//     }
+
+//     input {
+//       border: none;
+//       padding: 10px 11px;
+//       background-color: #e3e7f9;
+//     }
+//   }
+
+//   .user-cards-wrapper {
+//     .user-card {
+//       padding: 22px 10px;
+//       background-color: white;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       cursor: pointer;
+//       .details {
+//         display: flex;
+//         align-items: center;
+//         gap: 15px;
+//         width: 80%;
+
+//         .ant-avatar {
+//           width: 50px !important;
+//           height: 50px !important;
+//         }
+
+//         .content {
+//           width: 70%;
+
+//           h3 {
+//             margin: 0;
+//             font-size: 17px;
+//             white-space: nowrap;
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//           }
+
+//           .p-tag-message {
+//             margin: 0;
+//             white-space: nowrap;
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//             display: inline-block;
+//             max-width: 100%;
+//             font-size: 16px;
+//           }
+
+//           .p-tag-time {
+//             margin: 0;
+//             color: #afb8cf;
+//             white-space: nowrap;
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//           }
+//         }
+//       }
+//       button {
+//         border: none;
+//         .icon-favorite {
+//           // content: url(../../assets/favorite.png);
+//         }
+//       }
+//     }
+
+//     .horizontal-line {
+//       border-top: 1px solid #afb8cf;
+//       // margin-right: 22px;
+//     }
+//   }
+
+//   // Hide scrollbar for Firefox
+//   scrollbar-width: thin;
+//   scrollbar-color: transparent transparent;
+
+//   // Hide scrollbar for Chrome, Safari, and Opera
+//   &::-webkit-scrollbar {
+//     width: 0.4em;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background-color: transparent;
+//   }
+// }
+
+// .col-2-messages {
+//   background-color: #f1f1f1;
+//   padding-right: 32px;
+
+//   .col-2-messages-inner{
+//     background-color: #fff;
+//     border-radius: 14px;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   .header {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 10px;
+//     border-bottom: 1px solid #afb8cf;
+
+//     .details {
+//       display: flex;
+//       align-items: center;
+//       gap: 13px;
+
+//       .ant-avatar {
+//         width: 50px;
+//         height: 50px;
+//         border-radius: 14px;
+//       }
+//       h3 {
+//         font-size: 19px;
+//         margin: 0;
+//       }
+//     }
+//     button {
+//       border: none;
+//       box-shadow: 1px 0px 5px rgba(169, 169, 169, 0.5),
+//         -2px 0px 5px rgba(169, 169, 169, 0.5),
+//         0px 2px 5px rgba(169, 169, 169, 0.5);
+//       display: flex;
+//       align-items: center;
+//       .icon-favorite {
+//         // content: url(../../assets/favorite.png);
+//       }
+//     }
+//   }
+//   .messages-body {
+//   }
+//   .footer {
+//     button {
+//       border: none;
+
+//       .icon-send {
+//         // content: url(../../assets/send-green.png);
+//       }
+//       .icon-emoji {
+//         // content: url(../../assets/emoji.png);
+//       }
+//     }
+//   }
+// }
+
+
+// .right-sidebar{
+//   display: flex;
+//   flex-direction: column;
+//   .messages-body {
+//     flex-grow: 1;
+//     overflow-y: scroll;
+//     height: calc(100vh - 240px);
+//   }
+// }
+
+// .scroll-hide{
+//    // Hide scrollbar for Firefox
+//    scrollbar-width: thin;
+//    scrollbar-color: transparent transparent;
+ 
+//    // Hide scrollbar for Chrome, Safari, and Opera
+//    &::-webkit-scrollbar {
+//      width: 0;
+//    }
+ 
+//    &::-webkit-scrollbar-thumb {
+//      background-color: transparent;
+//    }
+// }
+
+// .footer {
+//   display: flex;
+//   padding: 15px 0px;
+//   border-top: 1px solid #afb8cf;
+// }
+
+
+
+// p.p-tag-time {
+//   color: #AFB8CF;
+//   margin: 0 !important;
+// }
+
+// .message-wrap {
+//   padding: 0px 15px;
+// }
+
+// .pass-time-text{
+//   color: #AFB8CF;
+//   text-align: center;
+// }
+
+// .empty-messages{
+//   display: flex;
+//   height: 100%;
+//   width: 100%;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll-hide{
+   // Hide scrollbar for Firefox
+   scrollbar-width: thin;
+   scrollbar-color: transparent transparent;
+ 
+   // Hide scrollbar for Chrome, Safari, and Opera
+   &::-webkit-scrollbar {
+     width: 0;
+   }
+ 
+   &::-webkit-scrollbar-thumb {
+     background-color: transparent;
+   }
+}
+
+
+.message-in {
+  .message{
+    padding: 16px 24px 16px 24px;
+    background-color: #DCE6FF;
+    border-radius: 32px 32px 32px 0px;
+    width: 100%;
+    max-width: 270px;
+    min-width: 130px;
+    margin-bottom: 0 !important;
+  }
+}
+
+.message-out{
+  text-align: right;
+  .message{
+    padding: 16px 24px 16px 24px;
+    color: white;
+    background-color: #6FCF97;
+    border-radius: 32px 32px 0px 32px;
+    width: fit-content;
+    margin-bottom: 0 !important;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+.icon-send {
+        content: url(../../../../public/assets/icons/send-green.png);
+      }
+      .icon-emoji {
+        content: url(../../../../public/assets/icons/emoji.png);
+      }
